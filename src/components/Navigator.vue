@@ -10,7 +10,6 @@
 export default {
   el: '#navigator',
   name: 'Navigator'
-
 }
 </script>
 

@@ -9,5 +9,7 @@ export default {
 </script>
 
 <style scoped>
-
+#home {
+  background-image: url('src\\assets\\background_in_activities_down.svg');
+}
 </style>

@@ -19,9 +19,9 @@ export default new VueRouter({
       component: About
     },
     {
-      path: '/joinus',
-      name: 'joinus',
-      component: Joinus
+      path: '/join',
+      name: 'join',
+      component: Join
     }
   ]
 })
