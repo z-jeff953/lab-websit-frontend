@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div id="home">
+      HOME
+    </div>
 </template>
 
 <script>
@@ -10,6 +12,12 @@ export default {
 
 <style scoped>
 #home {
-  background-image: url('src\\assets\\background_in_activities_down.svg');
+  height: 600px;
+  width: 100%;
+
+  background-image: url('../assets/background_in_activities_down.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
 }
 </style>

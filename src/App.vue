@@ -2,16 +2,19 @@
   <div id="app">
     <Navigator></Navigator>
     <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navigator from './components/Navigator'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    'Navigator': Navigator
+    'Navigator': Navigator,
+    'Footer': Footer
   }
 }
 </script>

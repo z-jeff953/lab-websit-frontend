@@ -2,7 +2,7 @@
   <div id = "navigator">
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-    <router-link to="/joinus">Joinus</router-link>
+    <router-link to="/join">Join</router-link>
   </div>
 </template>
 
@@ -14,5 +14,10 @@ export default {
 </script>
 
 <style scoped>
-
+#navigator {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+}
 </style>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import About from '../views/About'
-import Joinus from '../views/Joinus'
+import Join from '../views/Join'
 
 Vue.use(VueRouter)
 

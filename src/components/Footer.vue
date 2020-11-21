@@ -1,15 +1,13 @@
 <template>
-    <div></div>
+    <div id="footer">
+      Footer
+    </div>
 </template>
 
 <script>
 export default {
-
-  data () {
-    return {
-
-    }
-  }
+  el: '#footer',
+  name: 'Footer'
 }
 </script>
 
