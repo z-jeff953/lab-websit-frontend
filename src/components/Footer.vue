@@ -6,8 +6,11 @@
 
 <script>
 export default {
-  el: '#footer',
-  name: 'Footer'
+  name: 'Footer',
+  data () {
+    return {
+    }
+  }
 }
 </script>
 

@@ -1,12 +1,18 @@
 <template>
     <div>
+      <nav-box></nav-box>
       about
     </div>
 </template>
 
 <script>
+import NavBox from '../components/NavBox'
+
 export default {
-  name: 'About'
+  name: 'About',
+  components: {
+    NavBox
+  }
 }
 </script>
 

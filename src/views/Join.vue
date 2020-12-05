@@ -1,10 +1,16 @@
 <template>
-    <div></div>
+    <div>
+    joinssssss
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'Join'
+  name: 'Join',
+  data () {
+    return {
+    }
+  }
 }
 </script>
 

@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-    <Navigator></Navigator>
+    <navigator></navigator>
     <router-view></router-view>
-    <Footer></Footer>
+    <footer></footer>
   </div>
 </template>
 
 <script>
-import Navigator from './components/Navigator'
-import Footer from './components/Footer'
+import Navigator from '@/components/Navigator'
+import Footer from '@/components/Footer'
+import NavBox from '@/components/NavBox'
 
 export default {
   name: 'App',
   components: {
-    'Navigator': Navigator,
-    'Footer': Footer
+    Navigator,
+    Footer,
+    NavBox
   }
 }
 </script>
