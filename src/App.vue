@@ -2,30 +2,35 @@
   <div id="app">
     <navigator></navigator>
     <router-view></router-view>
-    <footer></footer>
+    <bottom></bottom>
   </div>
 </template>
 
 <script>
+import Bottom from '@/components/Bottom'
 import Navigator from '@/components/Navigator'
-import Footer from '@/components/Footer'
-import NavBox from '@/components/NavBox'
 
 export default {
   name: 'App',
   components: {
     Navigator,
-    Footer,
-    NavBox
+    Bottom
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
+  #app {
+    min-width: 500px;
+
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* 去除滚动条 */
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+  }::-webkit-scrollbar{
+    display:none
+    }
 </style>

@@ -1,13 +1,13 @@
 <template>
-  <div class="join-us">
-    <div class="join-us-top"></div>
-    <div class="join-us-bottom"></div>
+  <div class="activities">
+    <div class="activities-top"></div>
+    <div class="activities-bottom"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Join',
+  name: 'Activities',
   data () {
     return {
     }
@@ -16,24 +16,26 @@ export default {
 </script>
 
 <style scoped>
-  .join-us {
+  .activities {
     height: 2000px;
+    width: 100%;
+
     background-color: #252B42;
   }
 
-  .join-us-top {
-    height: 1500px;
+  .activities-top {
+    height: 1000px;
     background-image: url('../assets/backgrounds/background_top.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
   }
 
-  .join-us-bottom {
-    height: 500px;
-    background-image: url('../assets/backgrounds/background_bottum.svg');
+  .activities-bottom {
+    height: 1000px;
+    background-image: url('../assets/backgrounds/background_middle.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
   }
 </style>
