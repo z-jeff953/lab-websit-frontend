@@ -2,14 +2,8 @@
   <div class="about">
     <div class="toppic"></div>
     <div class="introduction">
-      <div class="introduction-title">
-        <div class="divider"></div>
-        <div class="title-words">
-          <div class="en-title">About Us</div>
-          <div class="cn-title">关于我们</div>
-        </div>
-      </div>
-      <div class="introduction-content">
+      <column-title enTitle="About Us" cnTitle="关于我们"></column-title>
+      <massage>
         <p>
           电子科技大学（University of Electronic Science and Technology of China）坐落于四川省会成都市，
           是中华人民共和国教育部直属高校，由教育部、工业和信息化部、四川省和成都市共建；
@@ -26,21 +20,32 @@
           2017年进入国家建设“双一流”A类高校行列。2019年教育部和四川省签约共同推进学校世界一流大学建设。
           电子科技大学（University of Electronic Science and Technology of China）坐落于四川省会成都市...
         </p>
-      </div>
+      </massage>
     </div>
   </div>
 </template>
 
 <script>
+import ColumnTitle from '../components/ColumnTitle'
+import Massage from '../components/Massage'
+
 export default {
-  name: 'About'
+  name: 'About',
+  components: {
+    ColumnTitle,
+    Massage
+  }
 }
 </script>
 
 <style scoped>
+  .about{
+    min-width: 1075px;
+    overflow: hidden;
+  }
   /* 顶部风景图 */
   .toppic {
-    background-image: url(../assets/ANZ_building.png);
+    background-image: url(../assets/about/ANZ_building.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
@@ -51,64 +56,11 @@ export default {
   /* 中间介绍部分 */
   .introduction {
     height: 640px;
-    width: 100%;
 
     background-color: #252B42;
     background-image: url('../assets/backgrounds/background_bottum.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
-  }
-
-  /* 介绍文字的标题部分 */
-  .introduction-title {
-    overflow: hidden;
-    height: 120px;
-    top: 5vh;
-
-    position: relative;
-    left: 10vw;
-  }
-
-  .divider {
-    width: 2px;
-    height: 55px;
-
-    background-color: #FFFFFF;
-    display: inline-block;
-  }
-
-  .title-words {
-    color: #FFFFFF;
-    display: inline-block;
-    overflow: hidden;
-    padding-left: 16px;
-  }
-
-  .en-title {
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-  }
-
-  .cn-title {
-    font-family: PingFang HK;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-  }
-
-  /* 介绍文字正文部分 */
-  .introduction-content {
-    width: 80vw;
-    margin: 0 auto;
-
-    font-family: PingFang HK;
-    font-size: 14px;
-    line-height: 20px;
-
-    color: #FFFFFF;
   }
 </style>

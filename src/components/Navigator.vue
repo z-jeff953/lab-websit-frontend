@@ -1,22 +1,30 @@
 <template>
   <div class="navigator">
-    <a href="/" class="left-nav">
-      <img class="aujl-logo" src="../assets/icons/AUJL_icon.svg" alt="AUJLlogo" />
-      <div class="name">
-        <div class="cn-name">澳新银行·电子科技大学联合实验室</div>
-        <div class="en-name">ANZ &amp; UESTC JOINT LAB</div>
+    <div class="nav-items">
+      <a href="/" class="left-nav">
+        <img
+          class="aujl-logo"
+          src="../assets/icons/AUJL_icon.svg"
+          alt="AUJLlogo"
+        />
+        <div class="name">
+          <div class="cn-name">澳新银行·电子科技大学联合实验室</div>
+          <div class="en-name">ANZ &amp; UESTC JOINT LAB</div>
+        </div>
+      </a>
+      <div class="right-nav">
+        <router-link to="/">
+          <nav-item cn="活动" en="Activities"></nav-item>
+        </router-link>
+        <router-link to="/about">
+          <nav-item cn="关于" en="About us"></nav-item>
+        </router-link>
+        <router-link to="/join">
+          <div class="nav-item join-button">
+            <span style="height: 14px;">加入我们</span>
+          </div>
+        </router-link>
       </div>
-    </a>
-    <div class="right-nav">
-      <router-link to="/">
-        <nav-item cn="活动" en="Activities"></nav-item>
-      </router-link>
-      <router-link to="/about">
-        <nav-item cn="关于" en="About us"></nav-item>
-      </router-link>
-      <router-link to="/join">
-        <div class="nav-item join-button"><span style="height: 14px;">加入我们</span></div>
-      </router-link>
     </div>
   </div>
 </template>
@@ -28,8 +36,7 @@ const NavItem = {
     cn: String,
     en: String
   },
-  template:
-      `<div class="nav-item">
+  template: `<div class="nav-item">
         <div class="cn-item">{{ cn }}</div>
         <div class="en-item">{{ en }}</div>
       </div>`
@@ -48,13 +55,12 @@ export default {
 
 <style scoped>
   /* 适配和媒体查询 */
-  @media screen and (max-width: 847px) {
+  @media screen and (max-width: 912px) {
     .left-nav {
       position: absolute;
       top: 5px;
       left: 10px;
     }
-
     .right-nav {
       position: absolute;
       top: 50px;
@@ -63,17 +69,12 @@ export default {
 
   /* 通用格式 */
   .navigator {
+    min-width: 1075px;
     height: 100px;
     width: 100%;
     left: 0px;
     top: 0px;
     border-radius: 0px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 
     position: absolute;
     overflow: hidden;
@@ -82,10 +83,21 @@ export default {
     backdrop-filter: blur(2px);
   }
 
-  .navigator::after,
+  .nav-items {
+    width: 80vw;
+    min-width: 1075px;
+    margin: 32px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* .navigator::after,
   .navigator::before {
     content: '';
-  }
+  } */
 
   /* 导航栏左侧区域 */
   .left-nav {
@@ -112,7 +124,7 @@ export default {
   .cn-name {
     font-family: PingFang HK;
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.8);
@@ -154,7 +166,6 @@ export default {
   .en-item {
     font-family: Helvetica;
     font-style: normal;
-    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.8);
@@ -173,7 +184,7 @@ export default {
     font-size: 14px;
     line-height: 14px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   /* a 标签相关设置 */

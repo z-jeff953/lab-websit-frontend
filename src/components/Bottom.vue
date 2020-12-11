@@ -53,13 +53,36 @@ export default {
 </script>
 
 <style scoped>
+  @media screen and (max-width: 850px) {
+    .bottom {
+      overflow: hidden;
+      height: 400px;
+    }
+    .links {
+      position: absolute;
+      top: 35px;
+      left: 20vw;
+    }
+    .divider {
+      visibility: hidden;
+    }
+    .contact {
+      position: absolute;
+      top: 180px;
+      left: 20vw;
+    }
+  }
+
   .bottom {
+    min-width: 1078px;
+    width: 100%;
     background: #323850;
     height: 331px;
     display: flex;
     align-items: center;
     justify-content: center;
-    ;
+
+    position: absolute;
   }
 
   /* 左端链接栏 */

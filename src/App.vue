@@ -21,9 +21,9 @@ export default {
 
 <style>
   #app {
-    min-width: 500px;
+  min-width: 525px;
 
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "微软雅黑","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
