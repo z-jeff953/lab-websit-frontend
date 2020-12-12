@@ -144,7 +144,7 @@ export default {
     width: 90%;
   }
 
-  .el-form-item__label {
+  #app .el-form-item__label {
     color: #ffffff;
   }
 
@@ -158,7 +158,7 @@ export default {
     margin: 20px auto;
   }
 
-  .el-button {
+  #app .el-button {
     border: 0px #ffffff solid;
   }
 

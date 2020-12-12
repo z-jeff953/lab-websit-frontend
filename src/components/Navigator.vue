@@ -1,7 +1,7 @@
 <template>
   <div class="navigator">
     <div class="nav-items">
-      <a href="/" class="left-nav">
+      <router-link to="/" class="left-nav">
         <img
           class="aujl-logo"
           src="../assets/icons/AUJL_icon.svg"
@@ -11,7 +11,8 @@
           <div class="cn-name">澳新银行·电子科技大学联合实验室</div>
           <div class="en-name">ANZ &amp; UESTC JOINT LAB</div>
         </div>
-      </a>
+      </router-link>
+
       <div class="right-nav">
         <router-link to="/">
           <nav-item cn="活动" en="Activities"></nav-item>
