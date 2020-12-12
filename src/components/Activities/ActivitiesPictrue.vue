@@ -1,6 +1,6 @@
 <template>
-  <div class="activities-pictrue" align="center">
-    <el-carousel indicator-position="outside" :interval="6000" height="600px">
+  <div class="activities-pictrue" >
+    <el-carousel indicator-position="outside" :interval="6000" height="600px" style="margin: 0 auto;text-align:center">
       <el-carousel-item v-for="(pic, index) in pics" :key="index">
         <img :src="pic" class="carousel-pic" />
       </el-carousel-item>
