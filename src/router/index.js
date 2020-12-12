@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home'
+import Activities from '../views/Activities'
 import About from '../views/About'
-import Joinus from '../views/Joinus'
+import Join from '../views/Join'
 
 Vue.use(VueRouter)
 
@@ -10,8 +10,8 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'activities',
+      component: Activities
     },
     {
       path: '/about',
@@ -19,9 +19,9 @@ export default new VueRouter({
       component: About
     },
     {
-      path: '/joinus',
-      name: 'joinus',
-      component: Joinus
+      path: '/join',
+      name: 'join',
+      component: Join
     }
   ]
 })
