@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Massage from '../../components/Massage'
+import Message from '../../components/Message'
 
 export default {
   name: 'UpcomingActivitiesContent',
@@ -58,7 +58,7 @@ export default {
     }
   },
   components: {
-    Massage
+    Message
   }
 }
 </script>

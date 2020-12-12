@@ -1,8 +1,9 @@
 <template>
   <div class="join-form">
     <div class="form-items">
-
-      <el-form class="el-form" :model="user" ref="apply" :rules="rules" label-position="right" label-width="80px">
+      <!-- 此页使用elementUI实现 -->
+      <!-- <el-form class="el-form" :model="user" ref="apply" :rules="rules" label-position="right" label-width="80px"> -->
+      <el-form class="el-form" :model="user" ref="apply" label-position="right" label-width="80px">
 
         <el-row>
           <el-col :span="12">
@@ -56,6 +57,19 @@
       </el-form>
     </div>
 
+    <el-dialog :visible.sync="centerDialogVisible" width="30%" :close-on-click-modal="false"
+      :close-on-press-escape="false" :show-close="false" top="330px" center>
+      <div>提交成功</div>
+      <div slot="title">
+        <div class="cheacked-img"></div>
+        <div class="cheacked-subtitle">
+          申请提交成功！
+        </div>
+      </div>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="centerDialogVisible = false">确 定</el-button>
+      </div>
+    </el-dialog>
   </div>
 </template>
 
@@ -96,14 +110,16 @@ export default {
         passGET6: [
           { required: true, message: '请选择是否通过英语六级', trigger: 'change' }
         ]
-      }
+      },
+      centerDialogVisible: false
     }
   },
   methods: {
     submitForm (formName) {
+      let that = this
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert('submit!')
+          that.centerDialogVisible = true
         } else {
           console.log('error submit!!')
           return false
@@ -150,5 +166,36 @@ export default {
   .flex-center {
     display: flex;
     justify-content: center;
+  }
+
+  .cheacked-img {
+    background-image: url(../../assets/join_us/cheaked.png);
+    height: 84.43px;
+    width: 84.43px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    position: relative;
+    bottom: 65px;
+  }
+
+  .cheacked-subtitle {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0.5em;
+
+    font-family: Heiti SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+    /* identical to box height, or 92% */
+
+    text-align: center;
+    color: #30B1D4;
+
+    position: relative;
+    bottom: 45px;
   }
 </style>

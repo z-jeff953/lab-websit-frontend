@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Message from '../Massage'
+import Message from '../Message'
 export default {
   name: 'MySource',
   props: {

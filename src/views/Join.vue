@@ -38,7 +38,7 @@
 <script>
 import Sources from '../components/Join/Sources'
 import ColumnTitle from '../components/ColumnTitle'
-import Message from '../components/Massage'
+import Message from '../components/Message'
 import JoinForm from '../components/Join/JoinForm'
 
 export default {

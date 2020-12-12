@@ -3,7 +3,7 @@
     <div class="toppic"></div>
     <div class="introduction">
       <column-title enTitle="About Us" cnTitle="关于我们"></column-title>
-      <massage>
+      <message>
         <p>
           电子科技大学（University of Electronic Science and Technology of China）坐落于四川省会成都市，
           是中华人民共和国教育部直属高校，由教育部、工业和信息化部、四川省和成都市共建；
@@ -20,20 +20,20 @@
           2017年进入国家建设“双一流”A类高校行列。2019年教育部和四川省签约共同推进学校世界一流大学建设。
           电子科技大学（University of Electronic Science and Technology of China）坐落于四川省会成都市...
         </p>
-      </massage>
+      </message>
     </div>
   </div>
 </template>
 
 <script>
 import ColumnTitle from '../components/ColumnTitle'
-import Massage from '../components/Massage'
+import Message from '../components/Message'
 
 export default {
   name: 'About',
   components: {
     ColumnTitle,
-    Massage
+    Message
   }
 }
 </script>
