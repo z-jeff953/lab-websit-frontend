@@ -7,7 +7,7 @@
 
 <script>
 import ActivitiesPictrue from './ActivitiesPictrue'
-
+// TODO: 懒加载, 图片组件重构
 export default {
   name: 'PreviousActivitiesContent',
   data () {

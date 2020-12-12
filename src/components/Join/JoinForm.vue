@@ -2,8 +2,7 @@
   <div class="join-form">
     <div class="form-items">
       <!-- 此页使用elementUI实现 -->
-      <!-- <el-form class="el-form" :model="user" ref="apply" :rules="rules" label-position="right" label-width="80px"> -->
-      <el-form class="el-form" :model="user" ref="apply" label-position="right" label-width="80px">
+      <el-form class="el-form" :model="user" ref="apply" :rules="rules" label-position="right" label-width="80px">
 
         <el-row>
           <el-col :span="12">

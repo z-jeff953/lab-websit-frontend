@@ -44,7 +44,7 @@ export default {
 <style scoped>
   .activities {
     min-width: 1075px;
-    height: 2000px;
+    height: auto;
     width: 100%;
 
     background-color: #252b42;
@@ -104,6 +104,6 @@ export default {
     overflow: hidden;
 
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
   }
 </style>

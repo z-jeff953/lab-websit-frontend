@@ -7,19 +7,38 @@
     <div class="content">
       <div class="poster-area">
         <div class="post-time">{{ content.pic.postTime }}</div>
-        <img :src="content.pic.url" :alt="content.subtitle.cnSubtitle" class="poster" />
+        <img
+          :src="content.pic.url"
+          :alt="content.subtitle.cnSubtitle"
+          class="poster"
+        />
       </div>
       <div class="words-area">
         <div class="notes">
-          <message class="note">活动时间：{{ content.notes.time }} <br /></message>
-          <message class="note">活动地点：{{ content.notes.location }} <br /></message>
-          <message class="note">面向人群：{{ content.notes.audience }} <br /></message>
-          <message class="note">报名方式：{{ content.notes.registrationMethod }} <br /></message>
-          <message class="note">报名链接：<a :href="content.notes.registrationLink" target="_blank" style="color: rgba(128, 135, 143, 1)
-              ;">{{content.notes.registrationLink}}</a><br /></message>
+          <message class="note"
+            >活动时间：{{ content.notes.time }} <br
+          /></message>
+          <message class="note"
+            >活动地点：{{ content.notes.location }} <br
+          /></message>
+          <message class="note"
+            >面向人群：{{ content.notes.audience }} <br
+          /></message>
+          <message class="note"
+            >报名方式：{{ content.notes.registrationMethod }} <br
+          /></message>
+          <message class="note"
+            >报名链接：<a
+              :href="content.notes.registrationLink"
+              target="_blank"
+              style="color: rgba(128, 135, 143, 1)
+              ;"
+              >{{ content.notes.registrationLink }}</a
+            ><br
+          /></message>
         </div>
         <div class="discription">
-            <p>{{ content.description }}</p>
+          <span>{{ content.description }}</span>
         </div>
       </div>
     </div>
@@ -77,7 +96,7 @@ export default {
   }
 
   .cn-subtitle {
-    font-family: "Microsoft YaHei";
+    font-family: 'Microsoft YaHei';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -112,7 +131,7 @@ export default {
 
     letter-spacing: -0.02em;
 
-    color: #C6C6C6;
+    color: #c6c6c6;
   }
 
   .poster {
@@ -141,6 +160,8 @@ export default {
 
   .discription {
     margin-top: 72px;
+    min-width: 450px;
+    width: 40vw;
 
     font-family: PingFang HK;
     font-size: 14px;
