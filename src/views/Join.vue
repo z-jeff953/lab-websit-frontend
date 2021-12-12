@@ -64,8 +64,8 @@ export default {
   }
 
   .join-us-top {
-    height: 900px;
-    background-image: url('../assets/backgrounds/background_top.png');
+    height: 700px;
+    background-image: url(https://gitee.com/zjeff-953/picsBed/raw/master/image/20201216132013.png);
     background-size: 100% 300px;
     background-repeat: no-repeat;
     background-position: top;
@@ -75,7 +75,7 @@ export default {
 
   .join-us-bottom {
     height: 900px;
-    background-image: url('../assets/backgrounds/background_bottum.svg');
+    background-image: url(https://gitee.com/zjeff-953/picsBed/raw/master/image/20201212202231.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -89,7 +89,7 @@ export default {
     margin: 40px auto 0 auto;
     margin-top: 40px;
 
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
   }
 </style>

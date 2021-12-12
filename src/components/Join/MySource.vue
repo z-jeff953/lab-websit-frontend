@@ -1,6 +1,11 @@
 <template>
   <div class="my-source">
-    <div class="pics" :style="{ backgroundImage: 'url(' + picsrc + ')' }"></div>
+    <div
+      class="pics"
+      :style="{
+        backgroundImage: 'url(' + picsrc + ')',
+      }"
+    ></div>
     <message style="white-space:pre-wrap;">{{ text }}</message>
   </div>
 </template>
@@ -25,9 +30,9 @@ export default {
   }
 
   .pics {
-    width: 142.63px;
-    height: 142.63px;
+    width: 142px;
+    height: 142px;
     background-size: contain;
+    background-repeat: no-repeat;
   }
-
 </style>

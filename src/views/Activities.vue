@@ -57,7 +57,7 @@ export default {
     min-height: 1000px;
     margin-bottom: 100px;
 
-    background-image: url('../assets/backgrounds/background_top.png');
+    background-image: url(https://gitee.com/zjeff-953/picsBed/raw/master/image/20201216132013.png);
     background-size: 100% 300px;
     background-repeat: no-repeat;
     background-position: top;
@@ -89,7 +89,7 @@ export default {
   /* 活动预告 */
   .activities-bottom-area {
     height: 1000px;
-    background-image: url('../assets/backgrounds/background_middle.svg');
+    background-image: url(https://gitee.com/zjeff-953/picsBed/raw/master/image/20201216132209.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;

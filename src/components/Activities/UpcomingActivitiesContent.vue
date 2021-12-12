@@ -60,7 +60,7 @@ export default {
             enSubtitle: 'Coming Soon '
           },
           pic: {
-            url: require('../../assets/activities/recruitment.png'),
+            url: ('https://gitee.com/zjeff-953/picsBed/raw/master/image/20201216132547.png'),
             postTime: 'Posted in Oct 1,2020'
           },
           notes: {

@@ -1,10 +1,10 @@
 <template>
   <div class="navigator">
     <div class="nav-items">
-      <router-link to="/" class="left-nav">
+      <router-link to="/about" class="left-nav">
         <img
           class="aujl-logo"
-          src="../assets/icons/AUJL_icon.svg"
+          src="https://gitee.com/zjeff-953/picsBed/raw/master/image/20201216131849.svg"
           alt="AUJLlogo"
         />
         <div class="name">
@@ -38,9 +38,9 @@ const NavItem = {
     en: String
   },
   template: `<div class="nav-item">
-        <div class="cn-item">{{ cn }}</div>
-        <div class="en-item">{{ en }}</div>
-      </div>`
+              <div class="cn-item">{{ cn }}</div>
+              <div class="en-item">{{ en }}</div>
+            </div>`
 }
 
 export default {
